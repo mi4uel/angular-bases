@@ -1,0 +1,16 @@
+<form class="d-flex flex-column" (ngSubmit)="emitCharacter()">
+    <h3 class="">Nuevo personaje</h3>
+    <input 
+        type="text" 
+        class="form-control mb-2" 
+        placeholder="Nombre del personaje"  
+        [(ngModel)]="character.name"
+        name="name">
+    <input 
+        type="number" 
+        class="form-control mb-2" 
+        placeholder="Poder"  
+        [(ngModel)]="character.power"
+        name="power">
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
